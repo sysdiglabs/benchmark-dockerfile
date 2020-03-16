@@ -12,21 +12,21 @@ if [ "$DIRECTORY" = "" ]; then
   DIRECTORY="./"
 fi
 
-if [ "$DOCKERFILE_PATTERN" = "" ]; then
+if [ "$DOCKERFILE_PATTERN" != "" ]; then
   DOCKERFILE_PATTERN="dockerfile"
 fi
 
 CMD="/dockerfile-benchmarker --directory $DIRECTORY --dockerfile-pattern $DOCKERFILE_PATTERN"
 
-if [ "$DISALLOWD_PACKAGES" = "" ]; then
+if [ "$DISALLOWD_PACKAGES" != "" ]; then
   CMD+=" --disallowed-packages $DISALLOWD_PACKAGES"
 fi
 
-if [ "$TRUSTED_BASE_IMAGES" = "" ]; then
+if [ "$TRUSTED_BASE_IMAGES" != "" ]; then
   CMD+=" --trusted-base-images $TRUSTED_BASE_IMAGES"
 fi
 
-if [ "$SECRET_PATTERNS" = "" ]; then
+if [ "$SECRET_PATTERNS" != "" ]; then
   CMD+=" --secret-patterns $SECRET_PATTERNS"
 fi
 
