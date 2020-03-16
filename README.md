@@ -30,7 +30,7 @@ list of secret patterns separated by comma (default "")
 
 ## Ouptuts
 
-## `violation_report`
+### `violation_report`
 
 Violation report generated from CIS Dockerfile benchmark
 
@@ -54,3 +54,47 @@ Dockerfile name pattern (default "dockerfile", case insensitive)
 ## Example Usage in Git workflow
 
 ## Outputs
+```
+{
+  "cis_docker_benchmark_violation_report": [
+    {
+      "rule": "CIS 4.1 Create a user for the container",
+      "violations": [
+        "test/Dockerfile_fail"
+      ]
+    },
+    {
+      "rule": "CIS 4.3 Do not install unnecessary packages in the container",
+      "violations": [
+        "test/Dockerfile_fail: netcat"
+      ]
+    },
+    {
+      "rule": "CIS 4.6 Add HEALTHCHECK instruction to the container image",
+      "violations": [
+        "test/Dockerfile_fail"
+      ]
+    },
+    {
+      "rule": "CIS 4.7 Do not use update instructions alone in the Dockerfile",
+      "violations": [
+        "test/Dockerfile_fail"
+      ]
+    },
+    {
+      "rule": "CIS 4.9 Use COPY instead of ADD in Dockerfile",
+      "violations": [
+        "test/Dockerfile_fail"
+      ]
+    },
+    {
+      "rule": "CIS 4.10 Do not store secrets in Dockerfiles",
+      "violations": [
+        "test/Dockerfile_fail: ENV contains 'aws_secret'"
+      ]
+    }
+  ]
+}
+```
+
+See [Example PR](https://github.com/sysdiglabs/dockerfile-benchmarker/pull/1/checks) for more details
