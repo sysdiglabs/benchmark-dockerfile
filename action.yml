@@ -13,10 +13,6 @@ inputs:
     description: 'list of disallowed packages separated by comma'
     required: false
     default: ''
-  disallowedPackages:
-    description: 'list of disallowed packages separated by comma'
-    required: false
-    default: ''
   trustedBaseImages:
     description: 'list of trusted base images separated by comma'
     required: false
