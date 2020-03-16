@@ -16,7 +16,7 @@ if [ "$DOCKERFILE_PATTERN" != "" ]; then
   DOCKERFILE_PATTERN="dockerfile"
 fi
 
-CMD="/dockerfile-benchmarker --directory "$DIRECTORY" --dockerfile-pattern "$DOCKERFILE_PATTERN" --disallowed-packages "$DISALLOWD_PACKAGES" --trusted-base-images "$TRUSTED_BASE_IMAGES" --secret-patterns "$SECRET_PATTERNS""
+CMD="/dockerfile-benchmarker --directory \""$DIRECTORY"\" --dockerfile-pattern \""$DOCKERFILE_PATTERN"\" --disallowed-packages \""$DISALLOWD_PACKAGES"\" --trusted-base-images \""$TRUSTED_BASE_IMAGES"\" --secret-patterns \""$SECRET_PATTERNS"\""
 
 echo "Directory: $DIRECTORY"
 echo "Dockerfile pattern: $DOCKERFILE_PATTERN"
