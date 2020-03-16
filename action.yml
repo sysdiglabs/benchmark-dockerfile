@@ -12,15 +12,15 @@ inputs:
   disallowedPackages:
     description: 'list of disallowed packages separated by comma'
     required: false
-    default: ''
+    default: '""'
   trustedBaseImages:
     description: 'list of trusted base images separated by comma'
     required: false
-    default: ''
+    default: '""'
   secretPatterns:
     description: 'list of secret patterns separated by comma'
     required: false
-    default: ''
+    default: '""'
     
 outputs:
   violation_report:
