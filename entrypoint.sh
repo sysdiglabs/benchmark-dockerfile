@@ -16,6 +16,18 @@ if [ "$DOCKERFILE_PATTERN" = "" ]; then
   $DOCKERFILE_PATTERN="dockerfile"
 fi
 
+if [ "$DISALLOWD_PACKAGES" = "" ]; then
+  $DISALLOWD_PACKAGES='""'
+fi
+
+if [ "$TRUSTED_BASE_IMAGES" = "" ]; then
+  $TRUSTED_BASE_IMAGES='""'
+fi
+
+if [ "$SECRET_PATTERNS" = "" ]; then
+  $SECRET_PATTERNS='""'
+fi
+
 echo "Directory: $DIRECTORY"
 echo "Dockerfile pattern: $DOCKERFILE_PATTERN"
 echo "Disallowed Packages: $DISALLOWD_PACKAGES"
