@@ -55,6 +55,9 @@ Dockerfile name pattern (default "dockerfile", case insensitive)
 
 ## Outputs
 ```
+INFO[2020-03-16T15:16:36-07:00] Trusted base images: []                      
+INFO[2020-03-16T15:16:36-07:00] Disallowed packages: [netcat]                
+INFO[2020-03-16T15:16:36-07:00] Secret patterns: [aws_secret pass]       
 {
   "cis_docker_benchmark_violation_report": [
     {
