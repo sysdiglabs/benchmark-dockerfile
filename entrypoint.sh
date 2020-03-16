@@ -38,7 +38,7 @@ echo "Secret patterns: $SECRET_PATTERNS"
 
 echo "$CMD"
 
-report="$(CMD)"
+report="$($CMD)"
 
 echo $report
 
