@@ -31,6 +31,9 @@ runs:
   args:
     - ${{ inputs.directory }}
     - ${{ inputs.dockerfilePattern }}
+    - ${{ inputs.disallowedPackages }}
+    - ${{ inputs.trustedBaseImages }}
+    - ${{ inputs.secretPatterns }}
 branding:
   icon: alert-circle
   color: blue
