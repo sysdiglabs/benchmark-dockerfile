@@ -9,6 +9,23 @@ inputs:
     description: 'Dockerfile name pattern (case insensitive)'
     required: false
     default: 'dockerfile'
+  disallowedPackages:
+    description: 'list of disallowed packages separated by comma'
+    required: false
+    default: ''
+  disallowedPackages:
+    description: 'list of disallowed packages separated by comma'
+    required: false
+    default: ''
+  trustedBaseImages:
+    description: 'list of trusted base images separated by comma'
+    required: false
+    default: ''
+  secretPatterns:
+    description: 'list of secret patterns separated by comma'
+    required: false
+    default: ''
+    
 outputs:
   violation_report:
     description: 'CIS Dockerfile benchmark violation report'

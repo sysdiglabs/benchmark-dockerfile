@@ -10,6 +10,24 @@ Directory of dockerfiles (default "./")
 
 ### `dockerfilePattern`
 
+dockerfile name pattern (default "dockerfile")
+
+### `disallowedPackages` 
+
+list of disallowed packages separated by comma (default "")
+
+### `disallowedPackages`
+
+list of disallowed packages separated by comma (default "")
+
+### `trustedBaseImages`
+
+list of trusted base images separated by comma (default "")
+
+### `secretPatterns`
+
+list of secret patterns separated by comma (default "")
+
 ## Ouptuts
 
 ## `violation_report`
