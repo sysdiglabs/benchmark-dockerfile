@@ -10,6 +10,12 @@ Directory of dockerfiles (default "./")
 
 ### `dockerfilePattern`
 
+## Ouptuts
+
+## `violation_report`
+
+Violation report generated from CIS Dockerfile benchmark
+
 Dockerfile name pattern (default "dockerfile", case insensitive)
 
 ## Use Cases
