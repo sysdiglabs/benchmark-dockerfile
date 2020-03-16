@@ -17,15 +17,15 @@ if [ "$DOCKERFILE_PATTERN" = "" ]; then
 fi
 
 if [ "$DISALLOWD_PACKAGES" = "" ]; then
-  $DISALLOWD_PACKAGES='""'
+  $DISALLOWD_PACKAGES="\"\""
 fi
 
 if [ "$TRUSTED_BASE_IMAGES" = "" ]; then
-  $TRUSTED_BASE_IMAGES='""'
+  $TRUSTED_BASE_IMAGES="\"\""
 fi
 
 if [ "$SECRET_PATTERNS" = "" ]; then
-  $SECRET_PATTERNS='""'
+  $SECRET_PATTERNS="\"\""
 fi
 
 echo "Directory: $DIRECTORY"
