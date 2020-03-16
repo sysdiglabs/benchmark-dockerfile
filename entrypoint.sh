@@ -18,6 +18,9 @@ fi
 
 echo "Directory: $DIRECTORY"
 echo "Dockerfile pattern: $DOCKERFILE_PATTERN"
+echo "Disallowed Packages: $DISALLOWD_PACKAGES"
+echo "Trusted base images: $TRUSTED_BASE_IMAGES"
+echo "Secret patterns: $SECRET_PATTERNS"
 
 report="$(/dockerfile-benchmarker --directory "$DIRECTORY" --dockerfile-pattern "$DOCKERFILE_PATTERN")" --disallowed-packages "$DISALLOWD_PACKAGES" --trusted-base-images "$TRUSTED_BASE_IMAGES" --secret-patterns "$SECRET_PATTERNS"
 
