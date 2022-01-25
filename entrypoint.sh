@@ -29,3 +29,7 @@ report=$(/dockerfile-benchmarker --directory "$DIRECTORY" --dockerfile-pattern "
 echo $report
 
 echo "::set-output name=violation_report::${report}"
+
+dockerfile-benchmarker --directory "$DIRECTORY" --dockerfile-pattern "$DOCKERFILE_PATTERN" --disallowed-packages "$DISALLOWD_PACKAGES" --trusted-base-images "$TRUSTED_BASE_IMAGES" --secret-patterns "$SECRET_PATTERNS"
+
+echo $#
