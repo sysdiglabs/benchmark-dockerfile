@@ -28,4 +28,4 @@ report=$(/dockerfile-benchmarker --directory "$DIRECTORY" --dockerfile-pattern "
 
 echo $report
 
-echo "::set-output name=violation_report::${report}"
+echo "violation_report=${report}" >> $GITHUB_OUTPUT
